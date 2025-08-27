@@ -1,0 +1,54 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://api:8000/api
+      - NEXT_PUBLIC_GENERATOR_URL=http://generator:3001
+    depends_on:
+      - api
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+      - /app/.next
+
+  api:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_DEBUG=True
+      - DJANGO_SECRET_KEY=dev-secret-key-for-docker-12345678901234567890
+      - DATABASE_URL=sqlite:///db.sqlite3
+      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+    volumes:
+      - ./services/api:/app
+      - django_data:/data
+
+  generator:
+    build:
+      context: ./services/generator
+      dockerfile: Dockerfile
+    ports:
+      - "7071:3001"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=gpt-4
+      - NEXT_PUBLIC_API_URL=http://api:8000/api
+      - GENERATOR_PORT=3001
+    volumes:
+      - ./services/generator:/app
+      - /app/node_modules
+      - /app/tests
+    depends_on:
+      - api
+
+volumes:
+  django_data:
