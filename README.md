@@ -2,6 +2,12 @@
 
 An intelligent test generation platform that uses AI to automatically create comprehensive Playwright tests for web applications. The system analyzes web pages, generates test scenarios, and produces production-ready test code with page object models.
 
+## 🎬 Demo Video
+
+https://github.com/user-attachments/assets/ai-powered-test-generator.mp4
+
+*Watch the complete demonstration of AI-powered test generation in action!*
+
 ## Features
 
 - 🤖 **AI-Powered Analysis**: Intelligent web page analysis using OpenAI GPT models
