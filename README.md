@@ -4,11 +4,21 @@ An intelligent test generation platform that uses AI to automatically create com
 
 ## 🎬 Demo Video
 
-[![AI-Powered Test Generator Demo](https://img.shields.io/badge/▶️_Watch_Demo-Click_Here-red?style=for-the-badge)](https://github.com/Mertsukusu/AI-powered-test-generator/blob/main/ai-powered-test-generator.mp4)
+[![AI-Powered Test Generator Demo](https://img.shields.io/badge/▶️_Watch_Demo-Click_Here-red?style=for-the-badge)](https://github.com/Mertsukusu/AI-powered-test-generator/blob/develop/ai-powered-test-generator.mp4)
 
 **📹 [ai-powered-test-generator.mp4](./ai-powered-test-generator.mp4)**
 
 _Watch the complete demonstration of AI-powered test generation in action!_
+
+## 📸 Application Screenshots
+
+### 🏠 Anasayfa - Test Generation Interface
+![Anasayfa](./mainscreen.png)
+*Modern and intuitive interface for configuring AI-powered test generation*
+
+### 📊 Test Sonuçları - Generated Test Results  
+![Test Results](./TestResults.png)
+*Comprehensive test results with downloadable Playwright test suites and Page Object Models*
 
 ## Features
 
