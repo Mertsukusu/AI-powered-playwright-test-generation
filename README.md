@@ -4,9 +4,9 @@ An intelligent test generation platform that uses AI to automatically create com
 
 ## 🎬 Demo Video
 
-https://github.com/Mertsukusu/AI-powered-test-generator/blob/develop/ai-powered-test-generator.mp4
+https://github.com/user-attachments/assets/d4c3e1f0-8b7e-4c3a-9f2d-1a5b8c9e0f4a
 
-*Watch the complete demonstration of AI-powered test generation in action!*
+_Watch the complete demonstration of AI-powered test generation in action!_
 
 ## Features
 
