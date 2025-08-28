@@ -4,10 +4,8 @@ An intelligent test generation platform that uses AI to automatically create com
 
 ## 🎬 Demo Video
 
-<video src="https://github.com/Mertsukusu/AI-powered-playwright-test-generation/raw/develop/assets/demo.mp4"
-       controls width="800" muted playsinline>
-  Your browser does not support the video tag.
-</video>
+[▶️ Watch the demo video](https://github.com/Mertsukusu/AI-powered-playwright-test-generation/raw/develop/assets/demo.mp4)
+
 
 _Watch the complete demonstration of AI-powered test generation in action!_
 
