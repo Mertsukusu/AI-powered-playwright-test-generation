@@ -4,18 +4,21 @@ An intelligent test generation platform that uses AI to automatically create com
 
 ## 🎬 Demo Video
 
-**📹 [ai-powered-test-generator.mp4](./ai-powered-test-generator.mp4)**
+<video src="assets/demo.mp4" controls width="800" muted playsinline>
+  Check Demo video!
+</video>
 
 _Watch the complete demonstration of AI-powered test generation in action!_
 
 ## 📸 Application Screenshots
 
 ### 🏠 Main Screeb - Test Generation Interface
-*Modern and intuitive interface for configuring AI-powered test generation*
 
-### 📊 Test Results - Generated Test Results  
+_Modern and intuitive interface for configuring AI-powered test generation_
 
-*Comprehensive test results with downloadable Playwright test suites and Page Object Models*
+### 📊 Test Results - Generated Test Results
+
+_Comprehensive test results with downloadable Playwright test suites and Page Object Models_
 
 ## Features
 
