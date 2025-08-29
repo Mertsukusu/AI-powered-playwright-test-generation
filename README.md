@@ -2,10 +2,8 @@
 
 An intelligent test generation platform that uses AI to automatically create comprehensive Playwright tests for web applications. The system analyzes web pages, generates test scenarios, and produces production-ready test code with page object models.
 
-## 🎬 Demo Video
-
 <h2>🎬 Demo Video</h2>
-<video src="https://user-images.githubusercontent.com/xxxxxxxx/yyyyyyyy-zzzzzzzz-demo-issues.mp4"
+<video src="https://github.com/Mertsukusu/AI-powered-playwright-test-generation/issues/1#issue-3365487297"
        controls width="100%" muted playsinline>
   Watch Video.
 </video>
