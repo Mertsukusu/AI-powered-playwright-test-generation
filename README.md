@@ -7,6 +7,12 @@ https://github.com/user-attachments/assets/3f04a73b-688d-43e6-b92c-983a7e19ccf4
 
 _Watch the complete demonstration of AI-powered test generation in action!_
 
+_The video will demonstrate:_
+
+- _Real-time website crawling and element discovery_
+- _AI-powered test scenario generation_
+- _Dynamic Page Object Model creation_
+- _Complete test suite execution_
 
 ## Features
 
@@ -19,7 +25,27 @@ _Watch the complete demonstration of AI-powered test generation in action!_
 - 🎯 **Smart Scenarios**: Context-aware test scenario generation
 - 📊 **Result Management**: Track and manage generated test suites
 
-## Architecture
+## 🏗️ Architecture
+
+```mermaid
+graph TD
+    A[Web Frontend - Next.js 14] --> B[Django REST API]
+    B --> C[Generator Service - Node.js]
+    C --> D[Playwright Crawler]
+    C --> E[OpenAI GPT-5 mini]
+    C --> F[Test Generator]
+    F --> G[Page Object Models]
+    F --> H[Test Scenarios]
+    F --> I[Configuration Files]
+    B --> J[SQLite Database]
+
+    style A fill:#0070f3
+    style B fill:#092e20
+    style C fill:#339933
+    style D fill:#2eaa4f
+    style E fill:#412991
+```
+
 
 This project follows a microservices architecture with three main components:
 
@@ -167,7 +193,7 @@ docker-compose up --build
 | Variable            | Description                    | Default        |
 | ------------------- | ------------------------------ | -------------- |
 | `OPENAI_API_KEY`    | OpenAI API key for AI features | Required       |
-| `OPENAI_MODEL`      | OpenAI model to use            | `gpt-4`        |
+| `OPENAI_MODEL`      | OpenAI model to use            | `gpt-5 mini`   |
 | `DJANGO_SECRET_KEY` | Django secret key              | Auto-generated |
 | `DJANGO_DEBUG`      | Enable Django debug mode       | `True`         |
 | `MAX_SCENARIOS`     | Maximum test scenarios         | `10`           |
@@ -231,7 +257,7 @@ generated_tests/
 - `npm run format` - Format code
 - `npm run typecheck` - TypeScript type checking
 
-### Testing
+### Quality Check & Testing
 
 Run tests for individual services:
 
@@ -292,17 +318,53 @@ docker-compose logs web
 4. Push to branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
+### Development Guidelines
+
+- Follow TypeScript best practices
+- Write comprehensive tests for new features
+- Update documentation for API changes
+- Ensure all quality checks pass
+- Add appropriate logging for debugging
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Support
+# 🆘 Support & Community
 
-For support and questions:
+### Getting Help
 
-- Create an issue on GitHub
-- Check existing documentation
-- Review troubleshooting guide
+1. **📖 Documentation**: Check this README and inline code comments
+2. **🐛 Issues**: Search existing [GitHub Issues](https://github.com/Mertsukusu/AI-powered-test-generator/issues)
+3. **💬 Discussions**: Join [GitHub Discussions](https://github.com/Mertsukusu/AI-powered-test-generator/discussions)
+4. **📧 Contact**: Create a new issue with detailed information
+
+### Reporting Issues
+
+When reporting issues, please include:
+
+- Website URL you're testing
+- Error messages and logs
+- Browser and system information
+- Steps to reproduce the issue
+
+## 🔗 Related Resources
+
+- 🎭 **[Playwright Documentation](https://playwright.dev/)** - Test automation framework
+- ⚡ **[Next.js Documentation](https://nextjs.org/docs)** - React framework
+- 🐍 **[Django Documentation](https://docs.djangoproject.com/)** - Python web framework
+- 🤖 **[OpenAI API Documentation](https://platform.openai.com/docs)** - AI integration
+- 🐳 **[Docker Documentation](https://docs.docker.com/)** - Containerization
+
+## 🏆 Acknowledgments
+
+- **OpenAI** for providing powerful AI capabilities
+- **Playwright Team** for the excellent testing framework
+- **Next.js Team** for the amazing React framework
+- **Django Team** for the robust backend framework
+- **Open Source Community** for continuous inspiration and support
+
+---
 
 ---
 
